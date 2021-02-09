@@ -1,0 +1,384 @@
+<html>
+    <style>
+        body{
+            background-color: rgb(245, 243, 237);
+            color: black;
+            width: auto;
+            margin-left: 0px;
+            padding-left: 0px;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding-bottom: 0px;
+        }
+        a{
+            text-decoration: none;
+            color: black
+        }
+        #header{
+            margin-left: 0px;
+            padding-left: 0px;
+            position: fixed;
+            top:0px;
+            bottom:0px;
+            background-color: rgb(238, 186, 29);
+            min-height: 10%;
+            padding-bottom: 0px;
+            width: 100%;
+            height: 70px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+        }
+        #header-img{
+            padding-left: 10px;
+            margin-right:0% ;
+            max-width: 50%;
+            max-height: 80%;
+        }
+        #ul1{
+            padding-top: 20px;
+            padding-left: 70px;
+            display: grid;
+            grid-template-columns: 70px 100px 100px;
+            grid-column-gap: 20px;
+            justify-content:space-between ;
+            font-size: 17px;
+        }   
+        main{
+            margin: 0px;
+            position: relative;
+            top: 120px;
+            z-index: -1;
+            margin: 0px;
+            padding-left: 10%;
+        }
+        h1,#form{
+            text-align: center;
+            font-family: sans-serif;
+        }
+        #form{
+            display: flex;
+            flex-direction: column;
+        }
+        #email{
+            width: 50%;
+            height: 30px;
+            text-align: center;
+            margin:7px ;
+            background-color: rgb(255, 254, 249);
+        }
+        #submit{
+            width: 20%;
+            height: 20px;
+            text-align: center;
+            padding-top: 0px;
+            background-color: rgb(238, 186, 29);
+        }
+        #activity{
+            display: grid;
+            grid-template-areas:"sent material" "plane shipping" "done quality" ;
+            grid-column-gap: 30px;
+            grid-row-gap: 20px;
+        }
+        #sent{
+            grid-area: sent;
+            color: rgb(240, 199, 18);
+        }
+        .materials{
+            grid-area: material;
+        }
+        #plane{
+            grid-area: plane;
+            color: rgb(240, 199, 18);
+        }
+        .shipping{
+            grid-area: shipping;
+        }
+        #done{
+            grid-area: done;
+            color: rgb(240, 199, 18);
+        }
+        .quality{
+            grid-area: quality;
+        }
+        .material-icons{
+            padding-top: 25px;
+        }
+        #ship,#premium,#assure{
+            font-size: 17px;
+            font-weight: bold;
+        }
+        #vid{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin:30px ;
+            padding: 0px;
+            
+        }
+        #price{
+            display: grid;
+            grid-template-areas:"bas ten val" ;
+            grid-column-gap: 20px;
+            margin: 30px;
+            padding-top: 0px;
+            text-align: center;
+            margin-right: 10%;
+        }
+        .bass{
+            grid-area: bas;
+            margin-right: 30px;
+        }
+        .tenor{
+            grid-area: ten;
+            margin-right: 30px;
+        }
+        .valve{
+            grid-area: val;
+            margin-right: 30px;
+        }
+        #bas-border,#ten-border,#val-border{
+            border-style: solid;
+            border-collapse: separate;
+            border-spacing: 0px 0px;
+            width: auto;
+            padding-top: 0px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            background-color: rgb(236, 232, 228);
+            height: auto;
+            min-width: 200px;
+            
+        }
+        #bas,#ten,#val{
+            border-collapse: separate;
+            border-spacing: 0px 0px;
+            text-align: center;
+            margin-left: 0px;
+            font-size: 14px;
+            font-weight: bold;
+            background-color: rgb(238, 186, 29);
+            width: 100%	;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin-top: opx;
+        }
+        footer{
+            margin-right: 10px;
+            background-color:rgb(236, 232, 228) ;
+            width: 95%;
+
+        }
+        #footer-nav{
+            display: flex;
+            flex-direction: row;
+            text-align: end;
+            justify-content: space-between ;
+            margin-left: 50%;
+            padding-top: 10px;
+            padding-right: 15px;
+        }
+        #copyright{
+            text-align: end;
+            padding-bottom: 10px;
+            margin-right: 15px;
+        }
+        @media(max-width: 500px){
+            #price{
+            display: grid;
+            grid-template-areas:"bas" "ten" "val" ;
+            grid-row-gap: 20px;
+            margin-left: 5px;
+            padding: 0px;
+            text-align: center;
+            margin-right: 10%;
+            font-size: small;
+
+        }
+        #bas-border,#ten-border,#val-border{
+            min-width: 200px;
+            padding: 0px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            min-height: 150px;
+        }
+        footer{
+            margin-right: 5px;
+            background-color:rgb(236, 232, 228) ;
+            width: 90%;
+            }
+        #footer-nav{
+            margin-left: 20%;
+            padding-top: 10px;
+            padding-right: 15px;
+        }
+        #header{
+            margin-left: 0px;
+            padding-left: 0px;
+            min-height: 10%;
+            padding-bottom: 0px;
+            width: 100%;
+            height: 15%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+
+        }
+        #ul1{
+            padding-top: 20px;
+            padding-bottom: 3%;
+            padding-left: 20%;
+            display: grid;
+            grid-template-columns: 70px 100px 100px;
+            grid-column-gap: 20px;
+            justify-content:space-evenly;
+            font-size: 14px;
+        }
+        #header-img{
+            padding-left: 10px;
+            margin-right:0% ;
+            max-width: 90%;
+        }
+        #email{
+            width: 70%;
+            height: 30px;
+            text-align: center;
+            margin:7px ;
+            background-color: rgb(255, 254, 249);
+        }
+        #submit{
+            width: 50%;
+            height: 20px;
+            text-align: center;
+            padding-top: 0px;
+            background-color: rgb(238, 186, 29);
+        }
+        }
+    </style>
+    <head>
+        <title id="title">
+            Original Trombones Page
+        </title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    <body>
+        <header id="header">
+            <img src="https://raw.githubusercontent.com/alfranc/alfranc.github.io/master/original_trombones.png" 
+            alt="Original Trombones logo" style="height: 100%;width: 40%;" id="header-img">
+            <nav id="nav-bar">
+                <ul id="ul1">
+                    <li><a href="#features" class="nav-link">Features</a></li>
+                    <li><a href="#hiw" class="nav-link">How it works</a></li>
+                    <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>
+                Sustainable, homemade handcrafted masterpieces
+            </h1>
+             <div><form id="form" action="https://www.freecodecamp.com/email-submit).">
+                    <label for="email">
+                        <input type="email" id="email" name="email" placeholder="enter your email address">
+                    </label>
+                    <label for="submit">
+                        <input type="submit" id="submit" name="email" value="Lets get started"><label for="submit">        
+                    </label>
+                </form>
+            <a id="features"></a>
+            </div>
+            <section id="activity">
+                
+                <i id="sent" class="material-icons">sentiment_satisfied_alt</i>
+                <p id="premium" class="materials" >
+                    Premium Materials 
+                </p>
+                
+                <p class="materials"> <br> <br>
+                    Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.
+                </p>
+                <i id="plane" class="material-icons">airplanemode_active</i>
+                <p id="ship" class="shipping">
+                    Fast Shipping
+                </p>
+                <p class="shipping"> <br> <br>
+                    We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.
+                </p>
+                <i id="done" class="material-icons">done_all</i>
+                <p id="assure" class="quality">
+                    Quality Assurance
+                </p>
+                <p class="quality"> <br> <br>
+                    For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.
+                </p>
+            </section>
+            <!video  id="video" controls autoplay=1 muted=1>
+                <!source src="https://youtu.be/y8Yv4pnO7qc" type="video">
+            <!/video>
+            <a id="hiw"></a>
+            <div id="vid">
+            <iframe id="video"
+            src="https://youtu.be/y8Yv4pnO7qc?autoplay=1&mute=1" frameborder="2">
+            
+            </iframe></div>
+            <a id="pricing"></a>
+            <section id="price">
+                <div id="bas-border">
+                <p id="bas" class="bass">
+                    BASS TROMBONE
+                </p>
+                <p class="bass"> 
+                    <ul class="bass">
+                        <li><strong>$600</strong></li>
+                        <br><li>Lorem ipsum.</li>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum dolor.</li>
+                        <li>Lorem ipsum.</li>
+                    </ul>
+                </p>
+                </div>
+                <div id="ten-border">
+                <p id="ten" class="tenor">
+                    TENOR TROMBONE
+                </p>
+                <P class="tenor">
+                    <ul class="tenor">
+                        <li><strong>$900</strong></li>
+                        <br><li>Lorem ipsum.</li>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum dolor.</li>
+                        <li>Lorem ipsum.</li>
+                    </ul>
+                </P>
+                </div>
+                <div id="val-border">
+                <p id="val" class="valve">
+                    VALVE TROMBONE
+                </p>
+                <P class="valve">
+                    <ul class="valve">
+                        <li><strong>$1200</strong></li>
+                        <br><li>Plays similar to a Trumpet</li>
+                        <li>Great for Jazz Bands</li>
+                        <li>Lorem ipsum dolor.</li>
+                        <li>Lorem ipsum.</li>
+                    </ul>
+                </P>
+                </div>
+            </section>
+            <footer>
+                <nav id="nav-bar">
+                    <ul id="footer-nav">
+                        <li><a href="#" class="fnav-link">Privacy</a></li>
+                        <li><a href="#" class="fnav-link">Terms</a></li>
+                        <li><a href="#" class="fnav-link">Imprint</a></li>
+                    </ul>
+                </nav>
+                <p id="copyright">copyright 2020, @arthropod_digital</p>
+            </footer>
+        </main>
+    </body>
+</html>
