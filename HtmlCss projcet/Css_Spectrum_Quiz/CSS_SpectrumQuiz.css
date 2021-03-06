@@ -1,0 +1,34 @@
+body{
+    background-color: white;
+}
+h2{
+    font-family: 'Cookie', cursive;
+}
+.cells{
+    /*border: 1px solid black;*/
+    width: 200px;
+    height: 200px;
+    border-spacing: 50px;
+}
+tr{
+    border-spacing: 50px;
+}
+table{
+    border-spacing: 5px;
+    margin: 20px;
+}
+#one{
+    background-color: #000000;
+}
+#two{
+    background-color: #14213D;
+}
+#three{
+    background-color: #FCA311;
+}
+#four{
+    background-color: #FFFFAA;
+}
+#five{
+    background-color: #E5E5E5;
+}

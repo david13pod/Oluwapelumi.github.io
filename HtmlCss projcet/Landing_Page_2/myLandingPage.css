@@ -1,0 +1,47 @@
+body{
+    background-color: rgb(5, 2, 19);
+}
+#thanks{
+    border-bottom:50px;
+    border-left: 50px;
+    border-right: 50px;
+    border-top: 0px;
+    border-style: solid;
+    border-color: aquamarine;
+    color: white;
+    text-align: center;
+}
+#landdiv{
+    border-bottom:50px;
+    border-left: 50px;
+    border-right: 50px;
+    border-top: 0px;
+    border-style: solid;
+    border-color: aquamarine;
+    color: white;
+    text-align: center;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+h1,h2, p,form{
+    padding: 20px;
+}
+input, label{
+    margin: 5px;
+}
+input{
+    width: 300px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+#submit{
+    width: fit-content;
+    background-color: orange;
+    font-size: large;
+    font-weight: bold;
+}
+.userinput{
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  

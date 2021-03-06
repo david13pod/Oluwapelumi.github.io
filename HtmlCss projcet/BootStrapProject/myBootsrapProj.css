@@ -1,0 +1,22 @@
+#signtext{
+    background-color: rgb(218, 214, 214);
+    padding-left: 50px;
+    font-size: 15px;
+    margin: 20px 0px 20px 0px;
+}
+#InputPassword{
+    margin-bottom: 10px;
+}
+#InputEmail{
+    margin-bottom: 10px;
+}
+#signsubmit{
+    margin-top: 10px;
+}
+#Projectext{
+    background-color: rgb(218, 214, 214);
+    padding-left: 50px;
+    font-size: 15px;
+    font-family: monospace;
+    margin: 20px 0px 20px 0px;
+}
