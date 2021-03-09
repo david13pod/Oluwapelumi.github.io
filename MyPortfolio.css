@@ -1,0 +1,248 @@
+.body{
+    background-color: rgb(10, 9, 9);
+    padding-left: 50px;
+}
+.main{
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0);
+    background-image: linear-gradient( 115deg, rgba(0, 0, 0, 0.9),
+     rgba(1, 1, 2, 0.7) ), 
+     url(img3.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.cmain{
+    color: rgb(255, 255, 255);
+}
+.hcont{
+    width: 70%;
+    margin-top: 10%;
+    text-align: center;
+    
+}
+.img-div{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#image{
+    max-width: 20%;
+    /* max-height: 10%; */
+    border: solid 4px white;
+    border-radius: 50%;
+}
+#image:hover {
+    transform: scale(1.2); 
+    border: solid 4px rgb(30, 204, 235);
+    border-radius: 50%;
+ }
+.skills{
+    width: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start ;
+    /* align-content: flex-start; */
+    /* justify-content: flex-start; */
+    margin-top: 15%;
+    
+}
+.skillimg{
+    /* flex-basis: 30%; */
+    max-width: 30% !important;
+    max-height: 4% !important;
+    border: solid 6px rgb(30, 204, 235);;
+    border-radius: 6px;
+    flex-basis:30%;
+    transition: 1s;
+}
+.skillimg:hover{
+    transform: scale(1.2); 
+}
+h3{
+    height: 5px;
+    text-align: left;
+    padding-left: 4%;
+    
+    
+}
+
+.skilltx{
+    /* flex-basis: 70%; */
+    flex-grow: 2;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Montserrat Alternates', sans-serif;
+    
+}
+.sheading{
+    color: rgb(238, 178, 13);
+    margin-top: 5%;
+    font-family: 'Stick', sans-serif;
+}
+.bio{
+    border-top: solid 3px white;
+}
+#bio{
+    font-size: 20px;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+#name{
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+#jobid{
+    font-size: 21px;
+    color: rgb(30, 204, 235);
+    font-family: 'Stick', sans-serif;
+
+}
+.space{
+    margin-bottom: 15%;
+}
+.zoom {
+    transition: transform .2s; /* Animation */
+    /* width: 200px;
+    height: 200px; */
+    margin: 0 auto;
+  }
+.zoom:hover {
+    transform: scale(1.2); 
+ }
+
+
+
+
+
+
+/* Footer */
+.footlink{
+    width: auto;
+    display: grid;
+    grid-template-areas:"Email Tel Instagram" "Github Linkedin Project" " plain1 plain2 inc" ;
+    grid-template-columns: 120px 200px 200px;
+    grid-column-gap: 5px;
+    grid-row-gap: 1px; 
+    color: white;
+    justify-content: flex-end;
+}
+footer{
+    width: auto;
+    margin-top: 8%;
+    /* padding-left: 45%; */
+    margin-bottom: 4%;
+}
+
+.Email{
+    grid-area: Email;
+}
+.Tel{
+    grid-area: Tel;
+    color: rgb(19, 128, 182);
+}
+.Inst{
+    grid-area: Instagram;
+    color: rgb(19, 128, 182);
+}
+.Github{
+    grid-area: Github;
+}
+.Linkedin{
+    grid-area: Linkedin;
+}
+.Project{
+    grid-area: Project;
+    color: rgb(19, 128, 182);
+}
+.inc{
+    grid-area: inc;
+    padding-top: 10%;
+}
+
+
+/* cv css */
+.pdetails{
+    display: grid;
+    grid-template-areas: "detail detail" "hdetail1 adetail1" "hdetail2 adetail2" "hdetail3 adetail3" ;
+    grid-template-columns:  200px 200px;
+    grid-column-gap: 5px;
+    grid-row-gap: 1px; 
+    justify-content: flex-start;
+    font-size: 14px;
+    font-family: 'Montserrat Alternates', sans-serif;
+
+}
+.details{
+    grid-area: detail ;
+}
+.hdetails1{
+    grid-area: hdetail1;
+}
+.adetails1{
+    grid-area: adetail1 ;
+}
+.hdetails2{
+    grid-area: hdetail2;
+}
+.adetails2{
+    grid-area: adetail2 ;
+}
+.hdetails3{
+    grid-area: hdetail3;
+}
+.adetails3{
+    grid-area: adetail3 ;
+}
+
+.cvhead{
+    border-bottom: solid 4px white;
+    color: rgb(238, 178, 13);
+    font-size: 20px;
+    font-family:  sans-serif;
+    font-weight: bolder;
+    margin-top: 3%;
+}
+.cvsubhd{
+    font-size: 16px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bolder;
+}
+.cvsub{
+    font-size: 15px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    
+}
+
+
+
+/* projects page css */
+
+.projskill{
+    display: grid;
+    grid-template-areas: "projhder projdet"   ;
+    grid-template-columns:  30% 50%;
+    grid-column-gap: 4%;
+    grid-row-gap: 1px; 
+    justify-content: flex-start;
+    margin-top: 5%;
+    margin-left: 4%;
+}
+.projhd{
+    grid-area: projhder;
+    font-size: 22px;
+    font-weight: bolder;
+    
+}
+.projsubhd{
+    grid-area: projdet;
+    font-size: 16px;
+    border-left: solid 3px rgb(238, 178, 13);
+    padding-left: 15%;
+    font-family:  sans-serif;
+    font-weight: bold;
+}
+.projhdsb{
+    font-size: 12px;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
