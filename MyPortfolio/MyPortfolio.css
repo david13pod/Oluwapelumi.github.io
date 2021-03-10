@@ -281,6 +281,7 @@ h3{
     }
     .hcont{
         width: 70%;
+        margin-top: 15%;
         
     }
     #name{
@@ -308,7 +309,7 @@ h3{
         flex-basis:30%;
     }
     #bio{
-        font-size: 110%;
+        font-size: 90%;
     }
     #jobid{
         font-size: 120%;
@@ -317,10 +318,10 @@ h3{
         margin-left: 5%;
     }
     .footlink{
-        grid-template-columns: 15% 22% 27%;
+        grid-template-columns: 20% 25% 30%;
         grid-row-gap: 2%; 
         justify-content: flex-start;
-        font-size: 70%;
+        font-size: 60%;
     }
 
 
@@ -332,18 +333,21 @@ h3{
         font-size: 80%;
     
     }
+    .marg{
+        margin-left: 1% !important;
+    }
     .lang{
         margin-bottom: 15% !important;
     }
     .cvhead{
-        font-size: 120%;
+        font-size: 110%;
         margin-top: 3%;
     }
     .cvsubhd{
-        font-size: 100%;
+        font-size: 90%;
     }
     .cvsub{
-        font-size: 80%;
+        font-size: 70%;
     }
 
 
@@ -361,7 +365,7 @@ h3{
         
     }
     .projsubhd{
-        font-size: 80%;
+        font-size: 65%;
         padding-left: 10%;
     }
     .projhdsb{
