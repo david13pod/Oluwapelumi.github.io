@@ -267,3 +267,105 @@ h3{
     font-size: 60%;
     font-family: 'Montserrat Alternates', sans-serif;
 }
+
+
+/* Phone responsiveness */
+
+@media(max-width: 560px){
+    .navvy{
+        width: 100% !important;
+        /* padding-left: 10%; */
+        margin-left: 0% !important;
+        padding-left: 1% !important;
+        font-size: 90%;
+    }
+    .hcont{
+        width: 70%;
+        
+    }
+    #name{
+        font-size: 150%;
+        padding-top: 2%;
+    }
+    #image{
+        max-width: 40%;
+    }
+    .skilltx{
+        /* flex-basis: 70%; */
+        flex-grow: 2;
+        font-size: 100%;
+        
+    }
+    .sheading{
+        margin-top: 3%;
+        font-size: 150%;
+    }
+    .skillimg{
+        /* flex-basis: 30%; */
+        max-width: 15% !important;
+        max-height: 4% !important;
+        border: solid 4px rgb(30, 204, 235);
+        flex-basis:30%;
+    }
+    #bio{
+        font-size: 110%;
+    }
+    #jobid{
+        font-size: 120%;
+    }
+    .space, .bio{
+        margin-left: 5%;
+    }
+    .footlink{
+        grid-template-columns: 15% 22% 27%;
+        grid-row-gap: 2%; 
+        justify-content: flex-start;
+        font-size: 70%;
+    }
+
+
+
+    .pdetails{
+        grid-template-columns:  40% 40%;
+        grid-column-gap: 4%;
+        grid-row-gap: 1%; 
+        font-size: 80%;
+    
+    }
+    .lang{
+        margin-bottom: 15% !important;
+    }
+    .cvhead{
+        font-size: 120%;
+        margin-top: 3%;
+    }
+    .cvsubhd{
+        font-size: 100%;
+    }
+    .cvsub{
+        font-size: 80%;
+    }
+
+
+
+
+    .projskill{
+        grid-template-columns:  40% 50%;
+        grid-column-gap: 2%;
+        grid-row-gap: 1%; 
+        margin-left: 5% !important;
+        margin-bottom: 15% !important;
+    }
+    .projhd{
+        font-size: 100%;
+        
+    }
+    .projsubhd{
+        font-size: 80%;
+        padding-left: 10%;
+    }
+    .projhdsb{
+        font-size: 40%;
+        font-family: 'Montserrat Alternates', sans-serif;
+    }
+}
