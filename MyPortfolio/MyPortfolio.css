@@ -1,6 +1,19 @@
 .body{
     background-color: rgb(10, 9, 9);
-    padding-left: 50px;
+    /* padding-left: 50px; */
+}
+.navy{
+    /* margin-bottom: 50% !important; */
+    height: 2% !important;
+}
+.navvy{
+    width: 150% !important;
+    /* padding-left: 10%; */
+    margin-left: 0% !important;
+    padding-left: 3% !important;
+    display: flex ;
+    flex-direction: row;
+    font-size: 120%;
 }
 .main{
     color: rgb(255, 255, 255);
@@ -11,7 +24,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
+    padding-left: 3%;
 }
 .cmain{
     color: rgb(255, 255, 255);
@@ -22,6 +35,9 @@
     text-align: center;
     
 }
+#name{
+    font-size: 250%;
+}
 .img-div{
     width: auto;
     display: flex;
@@ -29,7 +45,7 @@
     align-items: center;
 }
 #image{
-    max-width: 20%;
+    max-width: 30%;
     /* max-height: 10%; */
     border: solid 4px white;
     border-radius: 50%;
@@ -51,7 +67,7 @@
 }
 .skillimg{
     /* flex-basis: 30%; */
-    max-width: 30% !important;
+    max-width: 20% !important;
     max-height: 4% !important;
     border: solid 6px rgb(30, 204, 235);;
     border-radius: 6px;
@@ -72,7 +88,7 @@ h3{
 .skilltx{
     /* flex-basis: 70%; */
     flex-grow: 2;
-    font-size: 20px;
+    font-size: 100%;
     font-weight: bold;
     font-family: 'Montserrat Alternates', sans-serif;
     
@@ -81,25 +97,26 @@ h3{
     color: rgb(238, 178, 13);
     margin-top: 5%;
     font-family: 'Stick', sans-serif;
+    font-size: 200%;
 }
 .bio{
     border-top: solid 3px white;
 }
 #bio{
-    font-size: 20px;
+    font-size: 130%;
     font-family: 'Montserrat Alternates', sans-serif;
 }
 #name{
     font-family: 'Montserrat Alternates', sans-serif;
 }
 #jobid{
-    font-size: 21px;
+    font-size: 100%;
     color: rgb(30, 204, 235);
     font-family: 'Stick', sans-serif;
-
+    font-size: 150%;
 }
 .space{
-    margin-bottom: 15%;
+    margin-bottom: 2%;
 }
 .zoom {
     transition: transform .2s; /* Animation */
@@ -121,13 +138,14 @@ h3{
     width: auto;
     display: grid;
     grid-template-areas:"Email Tel Instagram" "Github Linkedin Project" " plain1 plain2 inc" ;
-    grid-template-columns: 120px 200px 200px;
-    grid-column-gap: 5px;
-    grid-row-gap: 1px; 
+    grid-template-columns: 100px 150px 170px;
+    grid-column-gap: 0%;
+    grid-row-gap: 5%; 
     color: white;
     justify-content: flex-end;
+    font-size: 100%;
 }
-footer{
+.footer{
     width: auto;
     margin-top: 8%;
     /* padding-left: 45%; */
@@ -195,23 +213,26 @@ footer{
     grid-area: adetail3 ;
 }
 
+.marg{
+    margin-left: 5% !important;
+}
 .cvhead{
     border-bottom: solid 4px white;
     color: rgb(238, 178, 13);
-    font-size: 20px;
+    font-size: 160%;
     font-family:  sans-serif;
     font-weight: bolder;
     margin-top: 3%;
 }
 .cvsubhd{
-    font-size: 16px;
+    font-size: 130%;
     font-family: 'Montserrat Alternates', sans-serif;
     font-weight: bolder;
 }
 .cvsub{
-    font-size: 15px;
+    font-size: 120%;
     font-family: 'Montserrat Alternates', sans-serif;
-    
+    font-weight: 500;
 }
 
 
@@ -226,23 +247,23 @@ footer{
     grid-row-gap: 1px; 
     justify-content: flex-start;
     margin-top: 5%;
-    margin-left: 4%;
+    margin-left: 8% !important;
 }
 .projhd{
     grid-area: projhder;
-    font-size: 22px;
+    font-size: 150%;
     font-weight: bolder;
     
 }
 .projsubhd{
     grid-area: projdet;
-    font-size: 16px;
+    font-size: 110%;
     border-left: solid 3px rgb(238, 178, 13);
     padding-left: 15%;
     font-family:  sans-serif;
     font-weight: bold;
 }
 .projhdsb{
-    font-size: 12px;
+    font-size: 60%;
     font-family: 'Montserrat Alternates', sans-serif;
 }
