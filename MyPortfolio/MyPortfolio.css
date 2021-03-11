@@ -309,7 +309,7 @@ h3{
         flex-basis:30%;
     }
     #bio{
-        font-size: 90%;
+        font-size: 70%;
     }
     #jobid{
         font-size: 120%;
@@ -318,10 +318,10 @@ h3{
         margin-left: 5%;
     }
     .footlink{
-        grid-template-columns: 20% 25% 30%;
+        grid-template-columns: 24% 35% 35%;
         grid-row-gap: 2%; 
         justify-content: flex-start;
-        font-size: 60%;
+        font-size: 50%;
     }
 
 
